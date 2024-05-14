@@ -1,0 +1,41 @@
+[[language]]
+name = "python"
+auto-format=true
+roots = ["pyproject.toml"]
+
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+roots = [".git"]
+language-servers = ["emmet-lsp"]
+formatter = { command = 'prettier', args = ["--parser", "html", "--print-width", "9999"] }
+
+[[language]]
+name = "perl"
+auto-format=true
+
+[language-server.perlnavigator.config]
+perlnavigator.includePaths = ["$workspaceFolder/build/extlib/lib/perl5"]
+perlnavigator.perltidyProfile = "$workspaceFolder/.vscode/perltidyrc"
+perlnavigator.perlimportsLintEnabled = true
+
+[[language]]
+name = "cpp"
+language-servers = [ "ccls" ]
+
+[language-server.ccls]
+command = "ccls"
+args = ["--stdio"]
+
+
+[[language]]
+name = "markdown"
+language-servers = ["obsidian-lsp"]
+[language-server.obsidian-lsp]
+command = "obsidian-lsp"
+args = ["--stdio"]
+
+
