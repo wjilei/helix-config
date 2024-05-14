@@ -4,14 +4,11 @@ theme="autumn_night"
 line-number = "relative"
 cursorline= true
 color-modes = true
-auto-pairs = false
+auto-pairs = true
 true-color = true
 mouse = true
 rulers = [120]
 
-[editor.lsp]
-auto-signature-help = false
-display-messages = true
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "file-modification-indicator", "version-control"]
