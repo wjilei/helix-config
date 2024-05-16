@@ -7,7 +7,7 @@ color-modes = true
 auto-pairs = true
 true-color = true
 mouse = true
-rulers = [120]
+# rulers = [120]
 
 
 [editor.statusline]
