@@ -9,6 +9,8 @@ true-color = true
 mouse = true
 # rulers = [120]
 
+[editor.soft-wrap]
+enable = true
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "file-modification-indicator", "version-control"]
